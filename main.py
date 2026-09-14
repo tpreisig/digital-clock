@@ -2,7 +2,6 @@ import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 from PyQt6.QtCore import Qt, QTime, QTimer
 from PyQt6.QtGui import QLinearGradient, QBrush, QPalette
-
 class DigitalClock(QWidget):
     def __init__(self):
         super().__init__()
@@ -24,6 +23,7 @@ class DigitalClock(QWidget):
             color: aliceblue;
             font-weight: 900;
         """)
+        
         # Setting up the linear gradient background
         palette = QPalette()
         gradient = QLinearGradient(0, 0, self.width(), self.height())
@@ -43,7 +43,7 @@ class DigitalClock(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = DigitalClock()
-    # ex.show() inherits from QWidget
-    ex.show()
+    clock = DigitalClock()
+    # clock.show() inherits from QWidget
+    clock.show()
     sys.exit(app.exec())
