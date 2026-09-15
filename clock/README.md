@@ -4,7 +4,7 @@ Desktop application written in Python with PyQt6, a comprehensive set of Python 
 \
 The following code sets up a QApplication instance, creates an instance of the DigitalClock class, which inherits from QWidget, configures its look and behavior, and starts a timer that updates the time displayed every second.\
 \
-![Screenshot](digital_clock/assets/clock.png)
+![Screenshot](assets/clock.png)
 
 ## Installation
 
